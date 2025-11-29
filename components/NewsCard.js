@@ -9,12 +9,13 @@ export default function NewsCard({ article }) {
       <div className="flex gap-3 border-b pb-3 mb-3 cursor-pointer hover:opacity-90">
         
         {/* Thumbnail Image */}
-        <div className="w-28 h-20 relative">
+        <div className="relative w-28 h-20 flex-shrink-0 overflow-hidden rounded">
           <Image
             src={article.image}
             alt={article.title}
             fill
             className="object-cover rounded"
+            sizes="112px"
           />
         </div>
 
