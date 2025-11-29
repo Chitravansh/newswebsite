@@ -143,6 +143,7 @@ GET https://newsapi.org/v2/top-headlines?category=business&apiKey=API_KEY
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, open an issue to discuss them first.
+Mail us at : chitravanshmohandevelops@gmail.com for more
 
 ---
 
