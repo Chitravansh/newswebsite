@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📰 Hindustan News Clone – Next.js + Tailwind + NewsAPI
 
-## Getting Started
+A modern, fast, responsive news website inspired by **Hindustan**, built using **Next.js 16**, **Tailwind CSS**, and **NewsAPI**.
 
-First, run the development server:
+🌍 **Live Demo:** [https://newswebsite-cyan.vercel.app/](https://newswebsite-cyan.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+📦 **GitHub Repo:** [https://github.com/Chitravansh/newswebsite](https://github.com/Chitravansh/newswebsite)
+
+---
+
+## 🚀 Features
+
+* Fully responsive UI
+* Top Story Hero section
+* Latest News with thumbnails
+* Trending Sidebar
+* Category-based news pages
+* Clickable cards redirecting to original articles
+* API route for secure server-side news fetching
+* Environment variable support
+* Deployed on Vercel
+
+---
+
+## 🛠️ Tech Stack
+
+* Next.js 16 (App Router)
+* Tailwind CSS
+* NewsAPI
+* React Server Components
+* Vercel Hosting
+
+---
+
+## 📂 Project Structure
+
+```
+newswebsite/
+│
+├── app/
+│   ├── page.js
+│   ├── layout.js
+│   ├── globals.css
+│   ├── api/
+│   │    └── news/route.js
+│   └── category/[name]/page.js
+│
+├── components/
+│   ├── Hero.js
+│   └── NewsCard.js
+│
+├── public/
+├── .env.local
+├── next.config.mjs
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🔧 Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ Clone the project
 
-## Learn More
+```
+git clone https://github.com/Chitravansh/newswebsite
+cd newswebsite
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 2️⃣ Install dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3️⃣ Add environment variables
 
-## Deploy on Vercel
+Create a `.env.local` file:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+NEWS_API_KEY=YOUR_NEWS_API_KEY
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4️⃣ Start development server
+
+```
+npm run dev
+```
+
+Visit: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🌐 Deployment (Vercel)
+
+Already deployed: [https://newswebsite-cyan.vercel.app/](https://newswebsite-cyan.vercel.app/)
+
+You must add environment variables on Vercel:
+
+```
+NEWS_API_KEY=YOUR_NEWS_API_KEY
+NEXT_PUBLIC_BASE_URL=https://newswebsite-cyan.vercel.app
+```
+
+---
+
+## 🔗 API Used (NewsAPI)
+
+### Top Headlines
+
+```
+GET https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY
+```
+
+### Category-Based
+
+```
+GET https://newsapi.org/v2/top-headlines?category=business&apiKey=API_KEY
+```
+
+---
+
+## 📸 Screenshots
+
+### ScreenShot 1
+![ScreenShot 1](assets/Image1.png)
+
+### ScreenShot 2
+![ScreenShot 2](assets/Image2.png)
+
+### 📱 Responsive View
+
+
+---
+
+## 🧩 Future Enhancements
+
+* Dark mode
+* Infinite scroll
+* Search functionality
+* PWA support
+* Bookmark articles
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, open an issue to discuss them first.
+
+---
+
+## 📜 License
+
+MIT License — free to use and modify.
