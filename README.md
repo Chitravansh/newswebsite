@@ -128,9 +128,6 @@ GET https://newsapi.org/v2/top-headlines?category=business&apiKey=API_KEY
 ### ScreenShot 2
 ![ScreenShot 2](assets/Image2.png)
 
-### 📱 Responsive View
-
-
 ---
 
 ## 🧩 Future Enhancements
